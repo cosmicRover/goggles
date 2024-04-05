@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5C461A92BC0677F000FC45F /* gogglesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461A82BC0677F000FC45F /* gogglesApp.swift */; };
+		C5C461AB2BC0677F000FC45F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461AA2BC0677F000FC45F /* ContentView.swift */; };
+		C5C461AD2BC06780000FC45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C461AC2BC06780000FC45F /* Assets.xcassets */; };
+		C5C461B02BC06780000FC45F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C461AF2BC06780000FC45F /* Preview Assets.xcassets */; };
+		C5C461BB2BC06780000FC45F /* gogglesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461BA2BC06780000FC45F /* gogglesTests.swift */; };
+		C5C461C52BC06780000FC45F /* gogglesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461C42BC06780000FC45F /* gogglesUITests.swift */; };
+		C5C461C72BC06780000FC45F /* gogglesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461C62BC06780000FC45F /* gogglesUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5C461B72BC06780000FC45F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5C4619D2BC0677F000FC45F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5C461A42BC0677F000FC45F;
+			remoteInfo = goggles;
+		};
+		C5C461C12BC06780000FC45F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5C4619D2BC0677F000FC45F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5C461A42BC0677F000FC45F;
+			remoteInfo = goggles;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C5C461A52BC0677F000FC45F /* goggles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goggles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C461A82BC0677F000FC45F /* gogglesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogglesApp.swift; sourceTree = "<group>"; };
+		C5C461AA2BC0677F000FC45F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C5C461AC2BC06780000FC45F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5C461AF2BC06780000FC45F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5C461B12BC06780000FC45F /* goggles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = goggles.entitlements; sourceTree = "<group>"; };
+		C5C461B62BC06780000FC45F /* gogglesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gogglesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C461BA2BC06780000FC45F /* gogglesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogglesTests.swift; sourceTree = "<group>"; };
+		C5C461C02BC06780000FC45F /* gogglesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gogglesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C461C42BC06780000FC45F /* gogglesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogglesUITests.swift; sourceTree = "<group>"; };
+		C5C461C62BC06780000FC45F /* gogglesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogglesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5C461A22BC0677F000FC45F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C461B32BC06780000FC45F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C461BD2BC06780000FC45F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5C4619C2BC0677F000FC45F = {
+			isa = PBXGroup;
+			children = (
+				C5C461A72BC0677F000FC45F /* goggles */,
+				C5C461B92BC06780000FC45F /* gogglesTests */,
+				C5C461C32BC06780000FC45F /* gogglesUITests */,
+				C5C461A62BC0677F000FC45F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5C461A62BC0677F000FC45F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5C461A52BC0677F000FC45F /* goggles.app */,
+				C5C461B62BC06780000FC45F /* gogglesTests.xctest */,
+				C5C461C02BC06780000FC45F /* gogglesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5C461A72BC0677F000FC45F /* goggles */ = {
+			isa = PBXGroup;
+			children = (
+				C5C461A82BC0677F000FC45F /* gogglesApp.swift */,
+				C5C461AA2BC0677F000FC45F /* ContentView.swift */,
+				C5C461AC2BC06780000FC45F /* Assets.xcassets */,
+				C5C461B12BC06780000FC45F /* goggles.entitlements */,
+				C5C461AE2BC06780000FC45F /* Preview Content */,
+			);
+			path = goggles;
+			sourceTree = "<group>";
+		};
+		C5C461AE2BC06780000FC45F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C5C461AF2BC06780000FC45F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5C461B92BC06780000FC45F /* gogglesTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5C461BA2BC06780000FC45F /* gogglesTests.swift */,
+			);
+			path = gogglesTests;
+			sourceTree = "<group>";
+		};
+		C5C461C32BC06780000FC45F /* gogglesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5C461C42BC06780000FC45F /* gogglesUITests.swift */,
+				C5C461C62BC06780000FC45F /* gogglesUITestsLaunchTests.swift */,
+			);
+			path = gogglesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5C461A42BC0677F000FC45F /* goggles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5C461CA2BC06780000FC45F /* Build configuration list for PBXNativeTarget "goggles" */;
+			buildPhases = (
+				C5C461A12BC0677F000FC45F /* Sources */,
+				C5C461A22BC0677F000FC45F /* Frameworks */,
+				C5C461A32BC0677F000FC45F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = goggles;
+			productName = goggles;
+			productReference = C5C461A52BC0677F000FC45F /* goggles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5C461B52BC06780000FC45F /* gogglesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5C461CD2BC06780000FC45F /* Build configuration list for PBXNativeTarget "gogglesTests" */;
+			buildPhases = (
+				C5C461B22BC06780000FC45F /* Sources */,
+				C5C461B32BC06780000FC45F /* Frameworks */,
+				C5C461B42BC06780000FC45F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5C461B82BC06780000FC45F /* PBXTargetDependency */,
+			);
+			name = gogglesTests;
+			productName = gogglesTests;
+			productReference = C5C461B62BC06780000FC45F /* gogglesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5C461BF2BC06780000FC45F /* gogglesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5C461D02BC06780000FC45F /* Build configuration list for PBXNativeTarget "gogglesUITests" */;
+			buildPhases = (
+				C5C461BC2BC06780000FC45F /* Sources */,
+				C5C461BD2BC06780000FC45F /* Frameworks */,
+				C5C461BE2BC06780000FC45F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5C461C22BC06780000FC45F /* PBXTargetDependency */,
+			);
+			name = gogglesUITests;
+			productName = gogglesUITests;
+			productReference = C5C461C02BC06780000FC45F /* gogglesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5C4619D2BC0677F000FC45F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					C5C461A42BC0677F000FC45F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					C5C461B52BC06780000FC45F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C5C461A42BC0677F000FC45F;
+					};
+					C5C461BF2BC06780000FC45F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = C5C461A42BC0677F000FC45F;
+					};
+				};
+			};
+			buildConfigurationList = C5C461A02BC0677F000FC45F /* Build configuration list for PBXProject "goggles" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5C4619C2BC0677F000FC45F;
+			productRefGroup = C5C461A62BC0677F000FC45F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5C461A42BC0677F000FC45F /* goggles */,
+				C5C461B52BC06780000FC45F /* gogglesTests */,
+				C5C461BF2BC06780000FC45F /* gogglesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5C461A32BC0677F000FC45F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C461B02BC06780000FC45F /* Preview Assets.xcassets in Resources */,
+				C5C461AD2BC06780000FC45F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C461B42BC06780000FC45F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C461BE2BC06780000FC45F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5C461A12BC0677F000FC45F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C461AB2BC0677F000FC45F /* ContentView.swift in Sources */,
+				C5C461A92BC0677F000FC45F /* gogglesApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C461B22BC06780000FC45F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C461BB2BC06780000FC45F /* gogglesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5C461BC2BC06780000FC45F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C461C52BC06780000FC45F /* gogglesUITests.swift in Sources */,
+				C5C461C72BC06780000FC45F /* gogglesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5C461B82BC06780000FC45F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5C461A42BC0677F000FC45F /* goggles */;
+			targetProxy = C5C461B72BC06780000FC45F /* PBXContainerItemProxy */;
+		};
+		C5C461C22BC06780000FC45F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5C461A42BC0677F000FC45F /* goggles */;
+			targetProxy = C5C461C12BC06780000FC45F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C5C461C82BC06780000FC45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5C461C92BC06780000FC45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		C5C461CB2BC06780000FC45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = goggles/goggles.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"goggles/Preview Content\"";
+				DEVELOPMENT_TEAM = BGNF8D28S2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cosmicRover.goggles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C5C461CC2BC06780000FC45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = goggles/goggles.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"goggles/Preview Content\"";
+				DEVELOPMENT_TEAM = BGNF8D28S2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cosmicRover.goggles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C5C461CE2BC06780000FC45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGNF8D28S2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cosmicRover.gogglesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/goggles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/goggles";
+			};
+			name = Debug;
+		};
+		C5C461CF2BC06780000FC45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGNF8D28S2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cosmicRover.gogglesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/goggles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/goggles";
+			};
+			name = Release;
+		};
+		C5C461D12BC06780000FC45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGNF8D28S2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cosmicRover.gogglesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = goggles;
+			};
+			name = Debug;
+		};
+		C5C461D22BC06780000FC45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BGNF8D28S2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cosmicRover.gogglesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = goggles;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5C461A02BC0677F000FC45F /* Build configuration list for PBXProject "goggles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C461C82BC06780000FC45F /* Debug */,
+				C5C461C92BC06780000FC45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5C461CA2BC06780000FC45F /* Build configuration list for PBXNativeTarget "goggles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C461CB2BC06780000FC45F /* Debug */,
+				C5C461CC2BC06780000FC45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5C461CD2BC06780000FC45F /* Build configuration list for PBXNativeTarget "gogglesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C461CE2BC06780000FC45F /* Debug */,
+				C5C461CF2BC06780000FC45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5C461D02BC06780000FC45F /* Build configuration list for PBXNativeTarget "gogglesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C461D12BC06780000FC45F /* Debug */,
+				C5C461D22BC06780000FC45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5C4619D2BC0677F000FC45F /* Project object */;
+}
