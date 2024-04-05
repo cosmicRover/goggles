@@ -14,6 +14,7 @@
 		C5C461BB2BC06780000FC45F /* gogglesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461BA2BC06780000FC45F /* gogglesTests.swift */; };
 		C5C461C52BC06780000FC45F /* gogglesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461C42BC06780000FC45F /* gogglesUITests.swift */; };
 		C5C461C72BC06780000FC45F /* gogglesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461C62BC06780000FC45F /* gogglesUITestsLaunchTests.swift */; };
+		C5C461D42BC0685D000FC45F /* ContentViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461D32BC0685D000FC45F /* ContentViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C5C461C02BC06780000FC45F /* gogglesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gogglesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C461C42BC06780000FC45F /* gogglesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogglesUITests.swift; sourceTree = "<group>"; };
 		C5C461C62BC06780000FC45F /* gogglesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogglesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5C461D32BC0685D000FC45F /* ContentViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				C5C461AC2BC06780000FC45F /* Assets.xcassets */,
 				C5C461B12BC06780000FC45F /* goggles.entitlements */,
 				C5C461AE2BC06780000FC45F /* Preview Content */,
+				C5C461D32BC0685D000FC45F /* ContentViewExtensions.swift */,
 			);
 			path = goggles;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5C461AB2BC0677F000FC45F /* ContentView.swift in Sources */,
+				C5C461D42BC0685D000FC45F /* ContentViewExtensions.swift in Sources */,
 				C5C461A92BC0677F000FC45F /* gogglesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

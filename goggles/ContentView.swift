@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(
+            alignment: .leading,
+            spacing: 10
+        ){
+            Label("Status: ", systemImage: "")
+            Label("Left ", systemImage: "")
+            Label("Right: ", systemImage: "")
+            Label("Full screen: ", systemImage: "")
+            Button(action: quit, label: { Text("Quit") })
         }
-        .padding()
     }
 }
 

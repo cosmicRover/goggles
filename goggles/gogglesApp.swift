@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct gogglesApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("RemSync", systemImage: "eyeglasses") {
             ContentView()
         }
     }
