@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var accessibilityManager: AccessibilityManager
+    
     var body: some View {
         VStack(
             alignment: .leading,
             spacing: 10
         ){
-            Label("Status: ", systemImage: "")
+            Text(accessibilityManager.isAccessEnabled ? "Accessibility permission: Granted" : "Accessibility permission: Denied")
             Label("Left ", systemImage: "")
             Label("Right: ", systemImage: "")
             Label("Full screen: ", systemImage: "")
@@ -22,6 +24,10 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
-}
+//Preview
+//struct ContentView_Preview: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//            .environmentObject(AccessibilityManager())
+//    }
+//}

@@ -15,6 +15,8 @@
 		C5C461C52BC06780000FC45F /* gogglesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461C42BC06780000FC45F /* gogglesUITests.swift */; };
 		C5C461C72BC06780000FC45F /* gogglesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461C62BC06780000FC45F /* gogglesUITestsLaunchTests.swift */; };
 		C5C461D42BC0685D000FC45F /* ContentViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461D32BC0685D000FC45F /* ContentViewExtensions.swift */; };
+		C5DBCC622BFEB04C00E3A4D1 /* ShortcutsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DBCC612BFEB04C00E3A4D1 /* ShortcutsManager.swift */; };
+		C5DBCC642BFEB3EE00E3A4D1 /* AccessibilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DBCC632BFEB3EE00E3A4D1 /* AccessibilityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C51B88602BFE9F66000DE274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C5C461A52BC0677F000FC45F /* goggles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goggles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C461A82BC0677F000FC45F /* gogglesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogglesApp.swift; sourceTree = "<group>"; };
 		C5C461AA2BC0677F000FC45F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +50,8 @@
 		C5C461C42BC06780000FC45F /* gogglesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogglesUITests.swift; sourceTree = "<group>"; };
 		C5C461C62BC06780000FC45F /* gogglesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogglesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C5C461D32BC0685D000FC45F /* ContentViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewExtensions.swift; sourceTree = "<group>"; };
+		C5DBCC612BFEB04C00E3A4D1 /* ShortcutsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsManager.swift; sourceTree = "<group>"; };
+		C5DBCC632BFEB3EE00E3A4D1 /* AccessibilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +102,15 @@
 		C5C461A72BC0677F000FC45F /* goggles */ = {
 			isa = PBXGroup;
 			children = (
+				C51B88602BFE9F66000DE274 /* Info.plist */,
 				C5C461A82BC0677F000FC45F /* gogglesApp.swift */,
 				C5C461AA2BC0677F000FC45F /* ContentView.swift */,
 				C5C461AC2BC06780000FC45F /* Assets.xcassets */,
 				C5C461B12BC06780000FC45F /* goggles.entitlements */,
 				C5C461AE2BC06780000FC45F /* Preview Content */,
 				C5C461D32BC0685D000FC45F /* ContentViewExtensions.swift */,
+				C5DBCC612BFEB04C00E3A4D1 /* ShortcutsManager.swift */,
+				C5DBCC632BFEB3EE00E3A4D1 /* AccessibilityManager.swift */,
 			);
 			path = goggles;
 			sourceTree = "<group>";
@@ -264,7 +272,9 @@
 			files = (
 				C5C461AB2BC0677F000FC45F /* ContentView.swift in Sources */,
 				C5C461D42BC0685D000FC45F /* ContentViewExtensions.swift in Sources */,
+				C5DBCC622BFEB04C00E3A4D1 /* ShortcutsManager.swift in Sources */,
 				C5C461A92BC0677F000FC45F /* gogglesApp.swift in Sources */,
+				C5DBCC642BFEB3EE00E3A4D1 /* AccessibilityManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +443,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = goggles/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,6 +471,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = goggles/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
