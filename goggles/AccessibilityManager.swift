@@ -9,7 +9,16 @@ import Combine
 import SwiftUI
 
 class AccessibilityManager: ObservableObject {
-    @Published var isAccessEnabled: Bool = false
+    @Published var isAccessEnabled: Bool = false {
+        didSet{
+            if isAccessEnabled {
+                print("ACCESS ENABLED")
+                DispatchQueue.global(qos: .background).async {
+                    ShortcutsManager.shared.startRegisteringShortcuts()
+                }
+            }
+        }
+    }
     
     init() {
         updateAccessStatus()
@@ -26,15 +35,16 @@ class AccessibilityManager: ObservableObject {
     }
     
     func promptForAccessibilityPermission() {
-        let alert = NSAlert()
-        alert.messageText = "Accessibility Permission Needed"
-        alert.informativeText = "Goggles needs accessibility permissions to respond to keyboard shortcuts. Please grant permission in System Preferences."
-        alert.addButton(withTitle: "Open System Preferences")
-        alert.addButton(withTitle: "Cancel")
-        
-        let response = alert.runModal()
-        if response == .alertFirstButtonReturn {
-            openSystemPreferencesAccessibility()
+        DispatchQueue.main.async {
+            let alert = NSAlert()
+            alert.messageText = "Accessibility Permission Needed"
+            alert.informativeText = "Goggles needs accessibility permission to respond to keyboard shortcuts. Quit and reopen the app after granting it."
+            alert.addButton(withTitle: "Open Accessibility Settings")
+            alert.addButton(withTitle: "Cancel")
+            let response = alert.runModal()
+            if response == .alertFirstButtonReturn {
+                self.openSystemPreferencesAccessibility()
+            }
         }
     }
     

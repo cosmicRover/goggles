@@ -15,24 +15,19 @@ struct ContentView: View {
             alignment: .leading,
             spacing: 10
         ){
-            Text(accessibilityManager.isAccessEnabled ? "Accessibility permission granted" : "Accessibility permission denied")
+            Text(accessibilityManager.isAccessEnabled ? "Accessibility permission: Granted" : "Accessibility permission: Denied")
             Label("Left ", systemImage: "")
             Label("Right: ", systemImage: "")
             Label("Full screen: ", systemImage: "")
             Button(action: quit, label: { Text("Quit") })
-        }.onAppear{
-            print("this should trigger but it doesnt")
-            
-            //TODO: call registration functions on accessibilityManager
-            if accessibilityManager.isAccessEnabled{
-                print("HERE!!!!")
-            } else{
-                
-            }
         }
     }
 }
 
-#Preview {
-    ContentView()
-}
+//Preview
+//struct ContentView_Preview: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//            .environmentObject(AccessibilityManager())
+//    }
+//}

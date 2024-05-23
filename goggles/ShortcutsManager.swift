@@ -5,7 +5,6 @@
 //  Created by Joy Paul on 5/22/24.
 //
 
-import Foundation
 import Cocoa
 
 class ShortcutsManager{
@@ -13,20 +12,42 @@ class ShortcutsManager{
     
     private init() {}
     
-    var monitor: Any?
+    var monitors: [Int: Any] = [:]
+    var shortcuts: [Int] = [123, 124] //TODO: read this from a file
     
-    func registerShortcut(forKey keyCode: Int) {
-        monitor = NSEvent.addGlobalMonitorForEvents(matching: [.keyDown]) { event in
-            if event.keyCode == keyCode && event.modifierFlags.contains(.command) && event.modifierFlags.contains(.shift) {
-                print("Command + Shift + \(keyCode) pressed")
-            }
+    func startRegisteringShortcuts(){
+        for keyCode in shortcuts{
+            registerShortcut(forKey: keyCode)
         }
     }
     
-    func unRegisterShortcut() {
-        if let monitor = monitor {
-            NSEvent.removeMonitor(monitor)
-            self.monitor = nil
+    func stopRegisteringShortcuts(){
+        unRegisterAllShortcuts()
+    }
+    
+    private func registerShortcut(forKey keyCode: Int) {
+        if monitors[keyCode] != nil{ return }
+        
+        let newMonitor = NSEvent.addGlobalMonitorForEvents(matching: [.keyDown]) { event in
+            if event.keyCode == keyCode && event.modifierFlags.contains(.command) && event.modifierFlags.contains(.option) {
+                print("Command + Option + \(keyCode) pressed")
+            }
+        }
+        
+        monitors[keyCode] = newMonitor
+    }
+    
+    private func unRegisterShortcut(forKey keyCode: Int) {
+        if let existingMonitor = monitors[keyCode] {
+            NSEvent.removeMonitor(existingMonitor)
+            monitors.removeValue(forKey: keyCode)
+        }
+    }
+    
+    private func unRegisterAllShortcuts(){
+        for (keyCode, existingMonitor) in monitors{
+            NSEvent.removeMonitor(existingMonitor)
+            monitors.removeValue(forKey: keyCode)
         }
     }
 }
