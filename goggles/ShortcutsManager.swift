@@ -31,6 +31,7 @@ class ShortcutsManager{
         let newMonitor = NSEvent.addGlobalMonitorForEvents(matching: [.keyDown]) { event in
             if event.keyCode == keyCode && event.modifierFlags.contains(.command) && event.modifierFlags.contains(.option) {
                 print("Command + Option + \(keyCode) pressed")
+                WindowManager().handleWindowResizeOperation()
             }
         }
         
