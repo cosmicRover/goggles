@@ -13,11 +13,10 @@ class ShortcutsManager{
     private init() {}
     
     var monitors: [Int: Any] = [:]
-    var shortcuts: [Int] = [123, 124] //TODO: read this from a file
     
     func startRegisteringShortcuts(){
-        for keyCode in shortcuts{
-            registerShortcut(forKey: keyCode)
+        for keyCode in HandledKeyCodes.allCases{
+            registerShortcut(forKey: Int(keyCode.rawValue))
         }
     }
     
@@ -31,7 +30,17 @@ class ShortcutsManager{
         let newMonitor = NSEvent.addGlobalMonitorForEvents(matching: [.keyDown]) { event in
             if event.keyCode == keyCode && event.modifierFlags.contains(.command) && event.modifierFlags.contains(.option) {
                 print("Command + Option + \(keyCode) pressed")
-                WindowManager().handleWindowResizeOperation()
+                
+                switch event.keyCode {
+                case HandledKeyCodes.leftArrow.rawValue:
+                    WindowManager().handleWindowResizeOperationFor(position: .horizontaLeft)
+                    
+                case HandledKeyCodes.rightArrow.rawValue:
+                    WindowManager().handleWindowResizeOperationFor(position: .horizontalRight)
+                    
+                default:
+                    break
+                }
             }
         }
         

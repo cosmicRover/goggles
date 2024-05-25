@@ -34,7 +34,7 @@ class AccessibilityManager: ObservableObject {
         }
     }
     
-    func promptForAccessibilityPermission() {
+    private func promptForAccessibilityPermission() {
         DispatchQueue.main.async {
             let alert = NSAlert()
             alert.messageText = "Accessibility Permission Needed"
@@ -48,7 +48,7 @@ class AccessibilityManager: ObservableObject {
         }
     }
     
-    func openSystemPreferencesAccessibility() {
+    private func openSystemPreferencesAccessibility() {
         if let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility") {
             NSWorkspace.shared.open(url)
         }
