@@ -11,6 +11,8 @@
 		C55443942C0153DE00E9CC3B /* DisplayCalculationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55443932C0153DE00E9CC3B /* DisplayCalculationManager.swift */; };
 		C55443962C01600600E9CC3B /* ResizePositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55443952C01600600E9CC3B /* ResizePositions.swift */; };
 		C55443982C01603200E9CC3B /* HandledKeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55443972C01603200E9CC3B /* HandledKeyCodes.swift */; };
+		C554439A2C03B63500E9CC3B /* WindowPositionAndSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55443992C03B63500E9CC3B /* WindowPositionAndSize.swift */; };
+		C554439C2C03D73C00E9CC3B /* OSLogExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C554439B2C03D73C00E9CC3B /* OSLogExtensions.swift */; };
 		C5C461A92BC0677F000FC45F /* gogglesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461A82BC0677F000FC45F /* gogglesApp.swift */; };
 		C5C461AB2BC0677F000FC45F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461AA2BC0677F000FC45F /* ContentView.swift */; };
 		C5C461AD2BC06780000FC45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C461AC2BC06780000FC45F /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		C55443932C0153DE00E9CC3B /* DisplayCalculationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCalculationManager.swift; sourceTree = "<group>"; };
 		C55443952C01600600E9CC3B /* ResizePositions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizePositions.swift; sourceTree = "<group>"; };
 		C55443972C01603200E9CC3B /* HandledKeyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandledKeyCodes.swift; sourceTree = "<group>"; };
+		C55443992C03B63500E9CC3B /* WindowPositionAndSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowPositionAndSize.swift; sourceTree = "<group>"; };
+		C554439B2C03D73C00E9CC3B /* OSLogExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLogExtensions.swift; sourceTree = "<group>"; };
 		C5C461A52BC0677F000FC45F /* goggles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goggles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C461A82BC0677F000FC45F /* gogglesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogglesApp.swift; sourceTree = "<group>"; };
 		C5C461AA2BC0677F000FC45F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				C55443932C0153DE00E9CC3B /* DisplayCalculationManager.swift */,
 				C55443952C01600600E9CC3B /* ResizePositions.swift */,
 				C55443972C01603200E9CC3B /* HandledKeyCodes.swift */,
+				C55443992C03B63500E9CC3B /* WindowPositionAndSize.swift */,
+				C554439B2C03D73C00E9CC3B /* OSLogExtensions.swift */,
 			);
 			path = goggles;
 			sourceTree = "<group>";
@@ -285,10 +291,12 @@
 				C55443982C01603200E9CC3B /* HandledKeyCodes.swift in Sources */,
 				C5C461AB2BC0677F000FC45F /* ContentView.swift in Sources */,
 				C5C461D42BC0685D000FC45F /* ContentViewExtensions.swift in Sources */,
+				C554439A2C03B63500E9CC3B /* WindowPositionAndSize.swift in Sources */,
 				C55443962C01600600E9CC3B /* ResizePositions.swift in Sources */,
 				C5DBCC622BFEB04C00E3A4D1 /* ShortcutsManager.swift in Sources */,
 				C5C461A92BC0677F000FC45F /* gogglesApp.swift in Sources */,
 				C5DBCC642BFEB3EE00E3A4D1 /* AccessibilityManager.swift in Sources */,
+				C554439C2C03D73C00E9CC3B /* OSLogExtensions.swift in Sources */,
 				C54F61102BFFDB2A001B2051 /* WindowManager.swift in Sources */,
 				C55443942C0153DE00E9CC3B /* DisplayCalculationManager.swift in Sources */,
 			);

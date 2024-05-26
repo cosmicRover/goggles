@@ -16,9 +16,11 @@ struct ContentView: View {
             spacing: 10
         ){
             Text(accessibilityManager.isAccessEnabled ? "Accessibility permission: Granted" : "Accessibility permission: Denied")
-            Label("Left ", systemImage: "")
-            Label("Right: ", systemImage: "")
-            Label("Full screen: ", systemImage: "")
+            
+            ForEach(HandledKeyCodes.allCases, id: \.self){ shortcut in
+                Label(shortcut.shortcutText, systemImage: "")
+            }
+            
             Button(action: quit, label: { Text("Quit") })
         }
     }
