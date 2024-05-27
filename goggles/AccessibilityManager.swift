@@ -7,15 +7,18 @@
 
 import Combine
 import SwiftUI
+import os.log
 
 class AccessibilityManager: ObservableObject {
     @Published var isAccessEnabled: Bool = false {
         didSet{
             if isAccessEnabled {
-                print("ACCESS ENABLED")
+                os_log("Accessibility access ENABLED", log: OSLog.application, type: .info)
                 DispatchQueue.global(qos: .background).async {
                     ShortcutsManager.shared.startRegisteringShortcuts()
                 }
+            } else{
+                os_log("Accessibility access DISABLED", log: OSLog.application, type: .info)
             }
         }
     }
@@ -34,7 +37,7 @@ class AccessibilityManager: ObservableObject {
         }
     }
     
-    func promptForAccessibilityPermission() {
+    private func promptForAccessibilityPermission() {
         DispatchQueue.main.async {
             let alert = NSAlert()
             alert.messageText = "Accessibility Permission Needed"
@@ -48,7 +51,7 @@ class AccessibilityManager: ObservableObject {
         }
     }
     
-    func openSystemPreferencesAccessibility() {
+    private func openSystemPreferencesAccessibility() {
         if let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility") {
             NSWorkspace.shared.open(url)
         }
