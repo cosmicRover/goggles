@@ -16,11 +16,11 @@ struct ContentView: View {
             spacing: 10
         ){
             Text(accessibilityManager.isAccessEnabled ? "Accessibility permission: Granted" : "Accessibility permission: Denied")
-            
+            Divider()
             ForEach(HandledKeyCodes.allCases, id: \.self){ shortcut in
                 Label(shortcut.shortcutText, systemImage: "")
             }
-            
+            Divider()
             Button(action: quit, label: { Text("Quit") })
         }
     }

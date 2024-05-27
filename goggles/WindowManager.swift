@@ -84,6 +84,5 @@ struct WindowManager {
             os_log("Failed to create AXValues", log: OSLog.application, type: .error)
             NSSound.beep()
         }
-        
     }
 }
