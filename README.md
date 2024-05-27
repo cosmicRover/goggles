@@ -1,6 +1,6 @@
 # Goggles :eyeglasses:
 
-Meet Goggles, a simple, light-weight menu bar app that allows you to resize your app window for MacOS 13 and up. Goggles is built only using Swift 5 and SwiftUI. Be sure to enable accessibility for goggles before using it. Goggles is heavily inspired by Spectales.
+Meet Goggles, a simple, light-weight menu bar app that allows you to resize your app window. This app is built for MacOS 13 and up using Swift 5 and SwiftUI. Be sure to enable accessibility for Goggles before using it. This app is heavily inspired by Spectales.
 
 <img width="254" alt="Screenshot" src="https://github.com/cosmicRover/goggles/assets/41096232/32be4fd5-1a49-49f5-9487-f723c9d97562">
 
