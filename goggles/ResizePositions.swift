@@ -13,4 +13,8 @@ enum ResizePosition {
     case verticalTop
     case verticalBottom
     case fullscreen
+    case HorizontalLeftOneThird
+    case HorizontalLeftTwoThird
+    case HorizontalRightOneThird
+    case HorizontalRightTwoThird
 }
