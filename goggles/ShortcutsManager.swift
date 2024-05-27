@@ -49,6 +49,18 @@ class ShortcutsManager{
                 case HandledKeyCodes.keyF.rawValue:
                     WindowManager.handleWindowResizeOperationFor(position: .fullscreen)
                     
+                case HandledKeyCodes.keyA.rawValue:
+                    WindowManager.handleWindowResizeOperationFor(position: .HorizontalLeftOneThird)
+                    
+                case HandledKeyCodes.keyS.rawValue:
+                    WindowManager.handleWindowResizeOperationFor(position: .HorizontalLeftTwoThird)
+                    
+                case HandledKeyCodes.keyApostrophe.rawValue:
+                    WindowManager.handleWindowResizeOperationFor(position: .HorizontalRightOneThird)
+                    
+                case HandledKeyCodes.keySemicolon.rawValue:
+                    WindowManager.handleWindowResizeOperationFor(position: .HorizontalRightTwoThird)
+
                 default:
                     break
                 }
