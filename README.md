@@ -1,10 +1,11 @@
 # Goggles :eyeglasses:
 
-Meet Goggles, a simple, light-weight menu bar app that allows you to resize your app window with keyboard shortcuts. This app is built for MacOS 13 and up using Swift 5 and SwiftUI. Be sure to enable accessibility for Goggles on first launch. This app is heavily inspired by Spectacles.
+Download [Goggles](https://github.com/cosmicRover/goggles/files/15451507/goggles.app.zip), a simple, light-weight menu bar app that allows you to resize your app window with keyboard shortcuts. This app is built for MacOS 13 and up using Swift 5 and SwiftUI. Be sure to enable accessibility for Goggles on first launch. This app is heavily inspired by Spectacles.
 
 <img width="254" alt="Screenshot" src="https://github.com/cosmicRover/goggles/assets/41096232/32be4fd5-1a49-49f5-9487-f723c9d97562">
 
 Goggles is functionally complete but requires testing.
+
 
 # Project Specs
 
