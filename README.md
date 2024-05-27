@@ -1,11 +1,10 @@
 # Goggles :eyeglasses:
 
-Download [Goggles](https://github.com/cosmicRover/goggles/files/15451507/goggles.app.zip), a simple, light-weight menu bar app that allows you to resize your app window with keyboard shortcuts. This app is built for MacOS 13 and up using Swift 5 and SwiftUI. Be sure to enable accessibility for Goggles on first launch. This app is heavily inspired by Spectacles.
+Download [Goggles](https://github.com/cosmicRover/goggles/files/15458166/goggles.app.zip), a simple, light-weight menu bar app that allows you to resize your app window with keyboard shortcuts. This app is built for MacOS 13 and up using Swift 5 and SwiftUI. Be sure to enable accessibility for Goggles on first launch. This app is heavily inspired by Spectacles.
 
-<img width="254" alt="Screenshot" src="https://github.com/cosmicRover/goggles/assets/41096232/32be4fd5-1a49-49f5-9487-f723c9d97562">
+<img width="254" alt="Goggles" src="https://github.com/cosmicRover/goggles/assets/41096232/3893defe-3a34-44f8-9656-00ca9e9916ef">
 
 Goggles is functionally complete but requires testing.
-
 
 # Project Specs
 
@@ -29,6 +28,16 @@ Goggles is functionally complete but requires testing.
 - **Description**: Resize an app window to full size of the screen using a keyboard shortcut.
 - **User Stories**: As a Mac user, I want to resize an app window to full size so that I may optimize my screen real-estate for productivity.
 - **Acceptance Criteria**: User must be able to resize an app window to full size of the screen using one discrete keyboard shortcut.
+---
+- **Feature Name**: One third window resizability.
+- **Description**: Resize an app window to 1/3 size of the display, then position it to left/right hand side of the screen using a keyboard shortcut.
+- **User Stories**: As a Mac user, I want to resize an app window to 1/3 size of the display so that I may optimize my screen real-estate for productivity.
+- **Acceptance Criteria**: User must be able to resize an app window to 1/3 size of the display, then position to either left/right hand side using two discrete keyboard shortcuts.
+---
+- **Feature Name**: Two third window resizability.
+- **Description**: Resize an app window to 2/3 size of the display, then position it to left/right hand side of the screen using a keyboard shortcut.
+- **User Stories**: As a Mac user, I want to resize an app window to 2/3 size of the display so that I may optimize my screen real-estate for productivity.
+- **Acceptance Criteria**: User must be able to resize an app window to 2/3 size of the display, then position to either left/right hand side using two discrete keyboard shortcuts.
 
 ## 3. Technical Specifications
 - **Technology Stack**: Swift 5, SwiftUI.
