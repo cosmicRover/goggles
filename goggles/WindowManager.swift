@@ -58,6 +58,7 @@ struct WindowManager {
     
     private static func resizeFirstWindowTo(firstWindow: AXUIElement, position: ResizePosition){
         guard var windowPositionAndSize = DisplayCalculationManager.getWindowPositionAndSize(for: position) else {
+            os_log("Failed to get window position and size", log: OSLog.application, type: .error)
             NSSound.beep()
             return
         }
@@ -66,17 +67,17 @@ struct WindowManager {
         let positionValue: AXValue? = AXValueCreate(AXValueType.cgPoint, &windowPositionAndSize.positionCoordinates)
         
         if let sizeValue = sizeValue, let positionValue = positionValue {
-            let setSizeResult = AXUIElementSetAttributeValue(firstWindow, kAXSizeAttribute as CFString, sizeValue)
-            
-            if setSizeResult != .success {
-                os_log("Failed to resize window, error: %@", log: OSLog.application, type: .error, "\(setSizeResult)")
-                NSSound.beep()
-            }
-            
             let setPositionResult = AXUIElementSetAttributeValue(firstWindow, kAXPositionAttribute as CFString, positionValue)
             
             if setPositionResult != .success {
                 os_log("Failed to position window, error: %@", log: OSLog.application, type: .error, "\(setPositionResult)")
+                NSSound.beep()
+            }
+            
+            let setSizeResult = AXUIElementSetAttributeValue(firstWindow, kAXSizeAttribute as CFString, sizeValue)
+            
+            if setSizeResult != .success {
+                os_log("Failed to resize window, error: %@", log: OSLog.application, type: .error, "\(setSizeResult)")
                 NSSound.beep()
             }
             

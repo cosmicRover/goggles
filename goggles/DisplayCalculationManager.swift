@@ -10,53 +10,52 @@ import os.log
 
 struct DisplayCalculationManager {
     static func getWindowPositionAndSize(for position: ResizePosition) -> WindowPositionAndSize?{
-        let topLeftOrigin = getWindowPositionOrigin(for: .horizontaLeft, displayCalcualtorFunc: getCurrentDisplaySize)
-        let horizontalHeightAndWidth = getWindowSize(for: .horizontaLeft, displayCalcualtorFunc: getCurrentDisplaySize)
+        let currentDisplaySize = getCurrentDisplaySize()
+        
+        let topLeftOrigin = getWindowPositionOrigin(for: .horizontaLeft, currentDisplaySize: currentDisplaySize)
+        let horizontalHeightAndWidth = getWindowSize(for: .horizontaLeft, currentDisplaySize: currentDisplaySize)
+        let verticalHeightAndWidth = getWindowSize(for: .verticalTop, currentDisplaySize: currentDisplaySize)
         
         switch position {
         case .horizontaLeft:
-            return WindowPositionAndSize(positionCoordinates: topLeftOrigin ?? CGPoint.zero, heightAndWidthCoordinates: horizontalHeightAndWidth ?? CGSize.zero)
+            return WindowPositionAndSize(positionCoordinates: topLeftOrigin, heightAndWidthCoordinates: horizontalHeightAndWidth)
         case .horizontalRight:
-            return WindowPositionAndSize(positionCoordinates: getWindowPositionOrigin(for: .horizontalRight, displayCalcualtorFunc: getCurrentDisplaySize) ?? CGPoint.zero, heightAndWidthCoordinates: horizontalHeightAndWidth ?? CGSize.zero)
+            return WindowPositionAndSize(positionCoordinates: getWindowPositionOrigin(for: .horizontalRight, currentDisplaySize: currentDisplaySize), heightAndWidthCoordinates: horizontalHeightAndWidth)
         case .verticalTop:
-            return nil
+            return WindowPositionAndSize(positionCoordinates: getWindowPositionOrigin(for: .verticalTop, currentDisplaySize: currentDisplaySize), heightAndWidthCoordinates: verticalHeightAndWidth)
         case .verticalBottom:
-            return nil
+            return WindowPositionAndSize(positionCoordinates: getWindowPositionOrigin(for: .verticalBottom, currentDisplaySize: currentDisplaySize), heightAndWidthCoordinates: verticalHeightAndWidth)
         }
     }
     
     private static func getCurrentDisplaySize() -> CGSize {
-        guard let screenSize = NSScreen.main?.frame.size else {
+        guard let displaySize = NSScreen.main?.frame.size else {
             os_log("Unable to retrieve display size", log: OSLog.application, type: .error)
             return CGSize.zero
         }
         
-        return screenSize
+        os_log("Current display size is: %@", log: OSLog.application, type: .info, displaySize as CVarArg)
+        
+        return displaySize
     }
     
-    private static func getWindowPositionOrigin(for position: ResizePosition, displayCalcualtorFunc: ()-> CGSize) -> CGPoint? {
-        let currentDisplaySize = displayCalcualtorFunc()
-        
+    private static func getWindowPositionOrigin(for position: ResizePosition, currentDisplaySize: CGSize) -> CGPoint {
         switch position {
-        case .horizontaLeft:
+        case .horizontaLeft, .verticalTop:
             return CGPoint(x: 0, y: 0)
         case .horizontalRight:
             return CGPoint(x: currentDisplaySize.width/2, y: 0)
-        case .verticalTop:
-            return nil
         case .verticalBottom:
-            return nil
+            return CGPoint(x: 0, y: currentDisplaySize.height/2)
         }
     }
     
-    private static func getWindowSize(for position: ResizePosition, displayCalcualtorFunc: ()-> CGSize) -> CGSize? {
-        let currentDisplaySize = displayCalcualtorFunc()
-        
+    private static func getWindowSize(for position: ResizePosition, currentDisplaySize: CGSize) -> CGSize {
         switch position{
         case .horizontaLeft, .horizontalRight:
             return CGSize(width: currentDisplaySize.width/2, height: currentDisplaySize.height)
         case .verticalTop, .verticalBottom:
-            return nil
+            return CGSize(width: currentDisplaySize.width, height: currentDisplaySize.height/2)
         }
     }
 }

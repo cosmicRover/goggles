@@ -11,16 +11,23 @@ import SwiftUI
 enum HandledKeyCodes: UInt16, CaseIterable {
     case leftArrow = 123
     case rightArrow = 124
+    case upArrow = 126
+    case bottomArrow = 125
     
     static let commandKey = "\u{2318}"
     static let optionKey = "\u{2325}"
+    static let controlKey = "\u{2303}"
     
     var shortcutText: String {
         switch self {
         case .leftArrow:
-            return "Left half: \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25C0}"
+            return "Left half: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25C0}"
         case .rightArrow:
-            return "Right half: \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25B6}"
+            return "Right half: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25B6}"
+        case .upArrow:
+            return "Top half: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25B2}"
+        case .bottomArrow:
+            return "Bottom half: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25BC}"
         }
     }
 }
