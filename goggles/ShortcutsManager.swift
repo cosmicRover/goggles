@@ -29,9 +29,9 @@ class ShortcutsManager{
         if monitors[keyCode] != nil{ return }
         
         let newMonitor = NSEvent.addGlobalMonitorForEvents(matching: [.keyDown]) { event in
-            if event.keyCode == keyCode.rawValue && event.modifierFlags.contains(.command) && event.modifierFlags.contains(.option) {
+            if event.keyCode == keyCode.rawValue && event.modifierFlags.contains(.command) && event.modifierFlags.contains(.option) && event.modifierFlags.contains(.control) {
                 
-                os_log("Command + Option + %@ pressed", log: OSLog.application, type: .info, "\(keyCode)")
+                os_log("Control + Command + Option + %@ pressed", log: OSLog.application, type: .info, "\(keyCode)")
                 
                 switch event.keyCode {
                 case HandledKeyCodes.leftArrow.rawValue:
@@ -39,6 +39,12 @@ class ShortcutsManager{
                     
                 case HandledKeyCodes.rightArrow.rawValue:
                     WindowManager.handleWindowResizeOperationFor(position: .horizontalRight)
+                    
+                case HandledKeyCodes.upArrow.rawValue:
+                    WindowManager.handleWindowResizeOperationFor(position: .verticalTop)
+                    
+                case HandledKeyCodes.bottomArrow.rawValue:
+                    WindowManager.handleWindowResizeOperationFor(position: .verticalBottom)
                     
                 default:
                     break
