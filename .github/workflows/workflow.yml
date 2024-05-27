@@ -20,8 +20,18 @@ jobs:
 
     - name: Build Xcode Project without signing
       run: |
-        xcodebuild -scheme goggles -project goggles.xcodeproj -sdk macosx -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS=""
+        xcodebuild -scheme goggles -project goggles.xcodeproj -sdk macosx -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS="" CONFIGURATION_BUILD_DIR=./build
 
+    - name: Archive App
+      run: |
+        mkdir -p output
+        cp -R ./build/goggles.app output/goggles.app
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: app
+        path: output/
 
     # - name: Build Xcode Project
     #   run: |
