@@ -16,7 +16,7 @@ jobs:
     - name: Set up Xcode version
       uses: maxim-lobanov/setup-xcode@v1
       with:
-        xcode-version: '15.3'  # Specify the Xcode version here
+        xcode-version: '15.3'  # Specify the Xcode version her
 
     - name: Build Xcode Project
       run: |
