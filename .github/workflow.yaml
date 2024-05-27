@@ -1,0 +1,22 @@
+name: macOS Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Xcode version
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: '15.3'  # Specify the Xcode version here
+
+    - name: Build Xcode Project
+      run: |
+        xcodebuild -scheme Release -project goggles.xcodeproj -sdk macosx -configuration Release clean build
+        # Replace 'YourSchemeName' and 'YourWorkspaceName' with your actual scheme and workspace names.
+        # Use -project if you have a .xcodeproj file instead of a .xcworkspace.
