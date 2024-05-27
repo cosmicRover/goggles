@@ -25,6 +25,8 @@ struct DisplayCalculationManager {
             return WindowPositionAndSize(positionCoordinates: getWindowPositionOrigin(for: .verticalTop, currentDisplaySize: currentDisplaySize), heightAndWidthCoordinates: verticalHeightAndWidth)
         case .verticalBottom:
             return WindowPositionAndSize(positionCoordinates: getWindowPositionOrigin(for: .verticalBottom, currentDisplaySize: currentDisplaySize), heightAndWidthCoordinates: verticalHeightAndWidth)
+        case .fullscreen:
+            return WindowPositionAndSize(positionCoordinates: topLeftOrigin, heightAndWidthCoordinates: getWindowSize(for: .fullscreen, currentDisplaySize: currentDisplaySize))
         }
     }
     
@@ -41,7 +43,7 @@ struct DisplayCalculationManager {
     
     private static func getWindowPositionOrigin(for position: ResizePosition, currentDisplaySize: CGSize) -> CGPoint {
         switch position {
-        case .horizontaLeft, .verticalTop:
+        case .horizontaLeft, .verticalTop, .fullscreen:
             return CGPoint(x: 0, y: 0)
         case .horizontalRight:
             return CGPoint(x: currentDisplaySize.width/2, y: 0)
@@ -56,6 +58,8 @@ struct DisplayCalculationManager {
             return CGSize(width: currentDisplaySize.width/2, height: currentDisplaySize.height)
         case .verticalTop, .verticalBottom:
             return CGSize(width: currentDisplaySize.width, height: currentDisplaySize.height/2)
+        case .fullscreen:
+            return CGSize(width: currentDisplaySize.width, height: currentDisplaySize.height)
         }
     }
 }

@@ -46,6 +46,9 @@ class ShortcutsManager{
                 case HandledKeyCodes.bottomArrow.rawValue:
                     WindowManager.handleWindowResizeOperationFor(position: .verticalBottom)
                     
+                case HandledKeyCodes.keyF.rawValue:
+                    WindowManager.handleWindowResizeOperationFor(position: .fullscreen)
+                    
                 default:
                     break
                 }

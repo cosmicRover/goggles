@@ -13,6 +13,7 @@ enum HandledKeyCodes: UInt16, CaseIterable {
     case rightArrow = 124
     case upArrow = 126
     case bottomArrow = 125
+    case keyF = 3
     
     static let commandKey = "\u{2318}"
     static let optionKey = "\u{2325}"
@@ -28,6 +29,8 @@ enum HandledKeyCodes: UInt16, CaseIterable {
             return "Top half: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25B2}"
         case .bottomArrow:
             return "Bottom half: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25BC}"
+        case .keyF:
+            return "Fullscreen: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + F"
         }
     }
 }
