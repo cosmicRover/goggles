@@ -4,6 +4,8 @@ Meet Goggles, a simple, light-weight menu bar app that allows you to resize your
 
 <img width="254" alt="Screenshot" src="https://github.com/cosmicRover/goggles/assets/41096232/32be4fd5-1a49-49f5-9487-f723c9d97562">
 
+Goggles is functionally complete but requires testing.
+
 # Project Specs
 
 ## 1. Overview
