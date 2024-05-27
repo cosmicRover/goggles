@@ -20,6 +20,6 @@ jobs:
 
     - name: Build Xcode Project
       run: |
-        xcodebuild -scheme Release -project goggles.xcodeproj -sdk macosx -configuration Release clean build
+        xcodebuild -scheme goggles -project goggles.xcodeproj -sdk macosx -configuration Release clean build
         # Replace 'YourSchemeName' and 'YourWorkspaceName' with your actual scheme and workspace names.
         # Use -project if you have a .xcodeproj file instead of a .xcworkspace.
