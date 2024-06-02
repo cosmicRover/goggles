@@ -6,6 +6,9 @@ Download [Goggles](https://github.com/user-attachments/files/15526244/goggles.ap
 
 Goggles is functionally complete but requires testing.
 
+Known issues:
+- The app can be unresponsive on first launch. Quit the app using Activity Monitor and re-launch to fix the issue.
+
 # Project Specs
 
 ## 1. Overview
