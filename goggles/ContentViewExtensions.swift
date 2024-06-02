@@ -25,4 +25,8 @@ extension ContentView {
             NSApplication.shared.terminate(nil)
         }
     }
+    
+    func launchAccessibilitySetting(){
+        accessibilityManager.updateAccessStatus(willDisplayAccessibilityPrompt: true)
+    }
 }

@@ -26,23 +26,23 @@ enum HandledKeyCodes: UInt16, CaseIterable {
     var shortcutText: String {
         switch self {
         case .leftArrow:
-            return "Left half: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25C0}"
+            return "Left 1/2: \(HandledKeyCodes.controlKey)\(HandledKeyCodes.optionKey)\(HandledKeyCodes.commandKey)\u{25C0}"
         case .rightArrow:
-            return "Right half: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25B6}"
+            return "Right 1/2: \(HandledKeyCodes.controlKey)\(HandledKeyCodes.optionKey)\(HandledKeyCodes.commandKey)\u{25B6}"
         case .upArrow:
-            return "Top half: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25B2}"
+            return "Top 1/2: \(HandledKeyCodes.controlKey)\(HandledKeyCodes.optionKey)\(HandledKeyCodes.commandKey)\u{25B2}"
         case .bottomArrow:
-            return "Bottom half: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + \u{25BC}"
+            return "Bottom 1/2: \(HandledKeyCodes.controlKey)\(HandledKeyCodes.optionKey)\(HandledKeyCodes.commandKey)\u{25BC}"
         case .keyF:
-            return "Fullscreen: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + F"
+            return "Fullscreen: \(HandledKeyCodes.controlKey)\(HandledKeyCodes.optionKey)\(HandledKeyCodes.commandKey)F"
         case .keyA:
-            return "Left 1/3: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + A"
+            return "Left 1/3: \(HandledKeyCodes.controlKey)\(HandledKeyCodes.optionKey)\(HandledKeyCodes.commandKey)A"
         case .keyS:
-            return "Left 2/3: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + S"
+            return "Left 2/3: \(HandledKeyCodes.controlKey)\(HandledKeyCodes.optionKey)\(HandledKeyCodes.commandKey)S"
         case .keyApostrophe:
-            return "Right 1/3: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + '"
+            return "Right 1/3: \(HandledKeyCodes.controlKey)\(HandledKeyCodes.optionKey)\(HandledKeyCodes.commandKey)'"
         case .keySemicolon:
-            return "Right 2/3: \(HandledKeyCodes.controlKey) + \(HandledKeyCodes.optionKey) + \(HandledKeyCodes.commandKey) + ;"
+            return "Right 2/3: \(HandledKeyCodes.controlKey)\(HandledKeyCodes.optionKey)\(HandledKeyCodes.commandKey);"
         }
     }
 }

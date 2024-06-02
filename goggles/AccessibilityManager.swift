@@ -27,12 +27,12 @@ class AccessibilityManager: ObservableObject {
         updateAccessStatus()
     }
     
-    func updateAccessStatus() {
+    func updateAccessStatus(willDisplayAccessibilityPrompt displayAccessibilityPrompt: Bool = false) {
         let trusted = kAXTrustedCheckOptionPrompt.takeRetainedValue() as String
         let options = [trusted: false]
         self.isAccessEnabled = AXIsProcessTrustedWithOptions(options as CFDictionary)
         
-        if !isAccessEnabled{
+        if !isAccessEnabled || displayAccessibilityPrompt{
             promptForAccessibilityPermission()
         }
     }
