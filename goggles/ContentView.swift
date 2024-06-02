@@ -15,7 +15,7 @@ struct ContentView: View {
             alignment: .leading,
             spacing: 10
         ){
-            Text(accessibilityManager.isAccessEnabled ? "Accessibility permission: Granted" : "Accessibility permission: Denied")
+            Button(action: launchAccessibilitySetting, label: { Text(accessibilityManager.isAccessEnabled ? "Accessibility permission: Granted" : "Accessibility permission: Denied") })
             Divider()
             ForEach(HandledKeyCodes.allCases, id: \.self){ shortcut in
                 Label(shortcut.shortcutText, systemImage: "")

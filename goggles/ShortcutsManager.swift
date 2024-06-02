@@ -13,7 +13,7 @@ class ShortcutsManager{
     
     private init() {}
     
-    var monitors: [HandledKeyCodes: Any] = [:]
+    private var monitors: [HandledKeyCodes: Any] = [:]
     
     func startRegisteringShortcuts(){
         for keyCode in HandledKeyCodes.allCases{
