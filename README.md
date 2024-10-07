@@ -1,6 +1,7 @@
 # Goggles :eyeglasses:
+https://github.com/user-attachments/assets/b9f015e6-7b12-44b1-b486-a7d15274f496
 
-Download [Goggles](https://github.com/user-attachments/files/15526244/goggles.app.zip), a simple, light-weight menu bar app that allows you to resize your app window with keyboard shortcuts. This app is built for MacOS 13 and up using Swift 5 and SwiftUI. Be sure to enable accessibility for Goggles on first launch. This app is heavily inspired by Spectacles.
+Download [Goggles](https://github.com/user-attachments/files/17285138/goggles_v1.zip), a simple, light-weight menu bar app that allows you to resize your app window with keyboard shortcuts. This app is built for MacOS 13 and up using Swift 5 and SwiftUI. Be sure to enable accessibility for Goggles on first launch. This app is heavily inspired by Spectacles.
 
 <img width="243" alt="Goggles" src="https://github.com/cosmicRover/goggles/assets/41096232/02c56ae0-b8c6-4d81-862d-74cc457b9038">
 
@@ -52,8 +53,8 @@ Known issues:
 
 ## 5. Testing and Quality Assurance
 - **Testing Strategy**:
-  - Manual testing of functionality and usability of the app. A google form for users to submit feedback.
-  - Unit, Integration and UI testing whereever applicable.
+  - Manual testing of functionality and usability of the app.
+  - Unit testing whereever applicable.
 - **Performance Criteria**: Negligible system impact/overhead while running this app in the background.
 
 ## 6. Deployment and Maintenance
