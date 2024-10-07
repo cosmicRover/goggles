@@ -13,6 +13,9 @@
 		C55443982C01603200E9CC3B /* HandledKeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55443972C01603200E9CC3B /* HandledKeyCodes.swift */; };
 		C554439A2C03B63500E9CC3B /* WindowPositionAndSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55443992C03B63500E9CC3B /* WindowPositionAndSize.swift */; };
 		C554439C2C03D73C00E9CC3B /* OSLogExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C554439B2C03D73C00E9CC3B /* OSLogExtensions.swift */; };
+		C5A5B1EE2CB458D900759F32 /* AccessibilityManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A5B1ED2CB458CA00759F32 /* AccessibilityManagerTests.swift */; };
+		C5A5B1F12CB4825A00759F32 /* ShortcutsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A5B1F02CB4825700759F32 /* ShortcutsManagerTests.swift */; };
+		C5A5B1F32CB484D400759F32 /* DisplayCalculationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A5B1F22CB484CF00759F32 /* DisplayCalculationManagerTests.swift */; };
 		C5C461A92BC0677F000FC45F /* gogglesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461A82BC0677F000FC45F /* gogglesApp.swift */; };
 		C5C461AB2BC0677F000FC45F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C461AA2BC0677F000FC45F /* ContentView.swift */; };
 		C5C461AD2BC06780000FC45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5C461AC2BC06780000FC45F /* Assets.xcassets */; };
@@ -50,6 +53,10 @@
 		C55443972C01603200E9CC3B /* HandledKeyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandledKeyCodes.swift; sourceTree = "<group>"; };
 		C55443992C03B63500E9CC3B /* WindowPositionAndSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowPositionAndSize.swift; sourceTree = "<group>"; };
 		C554439B2C03D73C00E9CC3B /* OSLogExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLogExtensions.swift; sourceTree = "<group>"; };
+		C5A5B1ED2CB458CA00759F32 /* AccessibilityManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityManagerTests.swift; sourceTree = "<group>"; };
+		C5A5B1EF2CB47FF600759F32 /* goggles.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = goggles.xctestplan; sourceTree = "<group>"; };
+		C5A5B1F02CB4825700759F32 /* ShortcutsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsManagerTests.swift; sourceTree = "<group>"; };
+		C5A5B1F22CB484CF00759F32 /* DisplayCalculationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCalculationManagerTests.swift; sourceTree = "<group>"; };
 		C5C461A52BC0677F000FC45F /* goggles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goggles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5C461A82BC0677F000FC45F /* gogglesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gogglesApp.swift; sourceTree = "<group>"; };
 		C5C461AA2BC0677F000FC45F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +101,7 @@
 		C5C4619C2BC0677F000FC45F = {
 			isa = PBXGroup;
 			children = (
+				C5A5B1EF2CB47FF600759F32 /* goggles.xctestplan */,
 				C5C461A72BC0677F000FC45F /* goggles */,
 				C5C461B92BC06780000FC45F /* gogglesTests */,
 				C5C461C32BC06780000FC45F /* gogglesUITests */,
@@ -144,6 +152,9 @@
 		C5C461B92BC06780000FC45F /* gogglesTests */ = {
 			isa = PBXGroup;
 			children = (
+				C5A5B1F02CB4825700759F32 /* ShortcutsManagerTests.swift */,
+				C5A5B1F22CB484CF00759F32 /* DisplayCalculationManagerTests.swift */,
+				C5A5B1ED2CB458CA00759F32 /* AccessibilityManagerTests.swift */,
 				C5C461BA2BC06780000FC45F /* gogglesTests.swift */,
 			);
 			path = gogglesTests;
@@ -306,6 +317,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A5B1EE2CB458D900759F32 /* AccessibilityManagerTests.swift in Sources */,
+				C5A5B1F12CB4825A00759F32 /* ShortcutsManagerTests.swift in Sources */,
+				C5A5B1F32CB484D400759F32 /* DisplayCalculationManagerTests.swift in Sources */,
 				C5C461BB2BC06780000FC45F /* gogglesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +474,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = goggles/goggles.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"goggles/Preview Content\"";
@@ -491,7 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = goggles/goggles.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"goggles/Preview Content\"";
@@ -520,7 +534,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BGNF8D28S2;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -539,7 +553,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BGNF8D28S2;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -557,7 +571,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BGNF8D28S2;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -574,7 +588,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BGNF8D28S2;
 				GENERATE_INFOPLIST_FILE = YES;
