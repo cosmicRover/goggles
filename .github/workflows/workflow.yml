@@ -28,6 +28,10 @@ jobs:
       run: |
         xcodebuild -scheme goggles -project goggles.xcodeproj -sdk macosx -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS="" CONFIGURATION_BUILD_DIR=./build -skipUnavailableActions
 
+    - name: Run Tests
+      run: |
+        xcodebuild test -project goggles.xcodeproj -scheme goggles -destination 'platform=macOS,arch=x86_64'
+
     - name: Archive App
       run: |
         mkdir -p output
