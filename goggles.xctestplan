@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "7D35837A-335E-4160-96F4-C5F16C2B281D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:goggles.xcodeproj",
+      "identifier" : "C5C461A42BC0677F000FC45F",
+      "name" : "goggles"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:goggles.xcodeproj",
+        "identifier" : "C5C461B52BC06780000FC45F",
+        "name" : "gogglesTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:goggles.xcodeproj",
+        "identifier" : "C5C461BF2BC06780000FC45F",
+        "name" : "gogglesUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

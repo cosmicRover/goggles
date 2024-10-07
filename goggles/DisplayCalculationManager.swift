@@ -9,8 +9,10 @@ import Cocoa
 import os.log
 
 struct DisplayCalculationManager {
+    static var currentDisplaySizeProvider: () -> CGSize = getCurrentDisplaySize
+    
     static func getWindowPositionAndSize(for position: ResizePosition) -> WindowPositionAndSize?{
-        let currentDisplaySize = getCurrentDisplaySize()
+        let currentDisplaySize = currentDisplaySizeProvider()
         
         let topLeftOrigin = getWindowPositionOrigin(for: .horizontaLeft, currentDisplaySize: currentDisplaySize)
         let horizontalHeightAndWidth = getWindowSize(for: .horizontaLeft, currentDisplaySize: currentDisplaySize)
