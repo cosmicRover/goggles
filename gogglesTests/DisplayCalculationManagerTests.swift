@@ -13,7 +13,7 @@ final class DisplayCalculationManagerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Inject a mock display size for testing
+        // Inject a mock display size for testing 
         DisplayCalculationManager.currentDisplaySizeProvider = { CGSize(width: 1920, height: 1080) }
     }
 
