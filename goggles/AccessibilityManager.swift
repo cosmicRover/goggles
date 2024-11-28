@@ -14,9 +14,7 @@ class AccessibilityManager: ObservableObject {
         didSet{
             if isAccessEnabled {
                 os_log("Accessibility access ENABLED", log: OSLog.application, type: .info)
-                DispatchQueue.global(qos: .background).async {
                     ShortcutsManager.shared.startRegisteringShortcuts()
-                }
             } else{
                 os_log("Accessibility access DISABLED", log: OSLog.application, type: .info)
             }
@@ -24,13 +22,17 @@ class AccessibilityManager: ObservableObject {
     }
     
     init() {
-        updateAccessStatus()
+        DispatchQueue.global(qos: .background).async {
+            self.updateAccessStatus()
+        }
     }
     
     func updateAccessStatus(willDisplayAccessibilityPrompt displayAccessibilityPrompt: Bool = false) {
         let trusted = kAXTrustedCheckOptionPrompt.takeRetainedValue() as String
         let options = [trusted: false]
-        self.isAccessEnabled = AXIsProcessTrustedWithOptions(options as CFDictionary)
+        DispatchQueue.main.sync{
+            self.isAccessEnabled = AXIsProcessTrustedWithOptions(options as CFDictionary)
+        }
         
         if !isAccessEnabled || displayAccessibilityPrompt{
             promptForAccessibilityPermission()
